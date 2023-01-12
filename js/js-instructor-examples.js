@@ -1,22 +1,3 @@
-"JavaScript is awesome".length;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Модуль 1. Занятие 1. Переменные, типы и операторы
 // ======================================================================
 
@@ -27,9 +8,123 @@
 
 // const apples = 47;
 // const grapes = 135;
-// consol.log(apples);
 
 // const total = apples + grapes;
-// console.log(total)
-// // const diff = ;
-// // console.log(diff)
+// const diff = grapes - apples;
+
+// console.log('Oбщее количество яблок и винограда:', total);
+
+// console.log('Разницу яблок и винограда:', diff);
+
+
+// Example 2 - Комбинированные операторы
+// -------------------------------------------------------------------------------
+
+// Замени выражение переопределения комбинированным оператором +=.
+
+// let students = 100;
+// // students = students + 50;
+// students += 50;
+
+// console.log(students);
+
+
+// Example 3 - Приоритет операторов
+// ---------------------------------------------------------------------------------
+
+// Разбери приоритет операторов в инструкции присвоения значения переменной result.
+
+// const result = 108 + 223 - 2 * 5;
+
+// console.log(result);
+
+
+// Example 4 - Класс Math
+// ----------------------------------------------------------------------------------------
+
+// Напиши скрипт, который выводит в консоль округленные вверх / вниз и т.д.значения
+// переменной value.Используй методы Math.floor(), Math.ceil() и Math.round().Проверь
+// что будет в консоли при значениях 27.3 и 27.9.
+
+// const value = 27.5;
+
+// console.log(Math.floor(value));
+
+// console.log(Math.ceil(value));
+
+// console.log(Math.round(value));
+
+
+// Example 5 - Шаблонные строки
+// --------------------------------------------------------------------------------------
+// Составь фразу с помощью шаблонных строк A has B bots in stock,
+// где A, B - переменные вставленные в строку.
+
+// const companyName = 'Cyberdyne Systems';
+// const repairBots = 150;
+// const defenceBots = 50;
+// const message = `${companyName} has ${repairBots + defenceBots} boots in stock`;
+
+// console.log(message); // "Cyberdyne Systems has 200 bots in stock"
+
+
+// Example 6 - Методы строк и чейнинг
+// -------------------------------------------------------------------------------------------
+
+// Напиши скрипт который рассчитывает индекс массы тела человека.
+// Для этого необходимо разделить вес в киллограммах на квадрат высоты человека в метрах.
+// Вес и высота хранятся в переменных weight и height, но не как числа,
+// а в виде строк(специально для задачи).Нецелые числа могут быть заданы
+// в виде 24.7 или 24, 7, то есть в качестве разделителя дробной части может быть запятая.
+
+// Индекс массиы тела необходимо округлить до одной цифры после запятой;
+
+// let weight = '88,3';
+// weight = Number(weight.replace(',', '.')) ;
+
+// console.log(weight);
+
+// let height = '1.75';
+// height = Number(height);
+// height = Math.pow(height, 2);
+// console.log(height);
+
+// const bmi = weight / height;
+
+// console.log(Number(bmi.toFixed(1))); // 28.8
+
+
+// Example 7 - Операторы сравнения и приведение типов
+// -------------------------------------------------------------------------------------------
+
+// Каким будет результат выражений ?
+
+// console.log(5 > 4); 
+
+// console.log(10 >= '7');
+
+// console.log('2' > '12');
+
+// console.log('2' < '12');
+
+// console.log('4' == 4);
+
+// console.log('6' === 6);
+
+// console.log('false' === false);
+
+// console.log(1 == true);
+
+// console.log(1 === true);
+
+// console.log('0' == false);
+
+// console.log('0' === false);
+
+// console.log('Papaya' < 'papaya');
+
+// console.log('Papaya' === 'papaya');
+
+// console.log(undefined == null);
+
+// console.log(undefined === null);
