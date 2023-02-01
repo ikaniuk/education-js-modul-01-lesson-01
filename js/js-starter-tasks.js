@@ -111,7 +111,7 @@
 // -----------------Task-08
 // // Задание:
 // // 1) запросите у пользователя сколько он хочет купить единиц товара
-// // 2) выведите на экран какую сумму должен внести пользователь с учетом количества 
+// // 2) выведите на экран какую сумму должен внести пользователь с учетом количества
 // // покупаемых единиц
 // // 3) выведите на экран сколько единиц товара останется на складе после покупки
 
@@ -123,3 +123,145 @@
 // alert(`Вы должны внести сумму ${totalPrice} за ${userProductQuantity} едениц товара`);
 // alert(`После покупки на складе осталось ${productQuantity} едениц товара.`);
 
+
+// ----------------Task-09
+// // Задание:
+// // Представьте, что вы разрабатываете сценарий, который будет использоваться для
+// // каталога товаров в интернет-магазине.
+// // Задача сценария, рассчитать какая должна быть ширина блока с описанием товара,
+// // для того чтобы в одну строку поместилось
+// // определенное количество товаров. Полученное значение ширины одного блока
+// // отобразите в консоли.
+
+
+// const screenWidth = 1980;
+// const margin = 5;
+// const desieredBlockCount = 5;
+
+// const widdthAllMargin = margin * (desieredBlockCount - 1);
+// const emptySpace = screenWidth - widdthAllMargin;
+// const blockWidth = emptySpace / desieredBlockCount;
+// console.log(`Ширина блока = ${blockWidth} px`);
+
+
+// --------------Task-10
+// //  Задание:
+// // Выполните задание в соответствии с комментарием в коде
+    
+    
+// const product1 = "Бумага офисная А4, 80 г/м2, 500 л";
+// const product2 = "Биндеры для бумаги 51 мм";
+// const product3 = "Ручка шариковая синяя"
+// const productPrice1 = 280.25;
+// const productPrice2 = 56;
+// const productPrice3 = 12.50
+// const productQuantity1 = Number(prompt(`Укажите количество продуктов '${product1}', цена ${productPrice1}`));
+// const productQuantity2 = Number(prompt(`Укажите количество продуктов '${product2}', цена ${productPrice2}`));
+// const productQuantity3 = Number(prompt(`Укажите количество продуктов '${product3}', цена ${productPrice3}`));
+// // Выведите на экран сколько пользователю нужно заплатить за каждый продукт по
+// // отдельности и всего за все продукты
+// // используйте форматированный вывод
+
+// const productTotalPrice1 = productQuantity1 * productPrice1;
+// const productTotalPrice2 = productQuantity2 * productPrice2;
+// const productTotalPrice3 = productQuantity3 * productPrice3;
+
+// const productsTotalPrice = productTotalPrice1 + productTotalPrice2 + productTotalPrice3;
+
+// console.log(`Ваш заказ ${product1}, кол-во ${productQuantity1}, сумма к оплате ${productTotalPrice1}`);
+// console.log(`Ваш заказ ${product2}, кол-во ${productQuantity2}, сумма к оплате ${productTotalPrice2}`);
+// console.log(`Ваш заказ ${product3}, кол-во ${productQuantity3}, сумма к оплате ${productTotalPrice3}`);
+// console.log('Общая сумма', productsTotalPrice);
+
+
+// ------------task-11
+
+// // Задание:
+// //     Исправьте ошибки, добавив недостающие операторы
+// let product1 = "Бумага офисная А4, 80 г/м2, 500 л";
+// let product2 = "Биндеры для бумаги 51 мм";
+// let product3 = "Ручка шариковая синяя";
+
+// let productPrice1 = 280.25;
+// let productPrice2 = 56;
+// let productPrice3 = 12.50;
+
+// let productQuantity1 = +prompt(`Укажите количество продуктов '${product1}', цена ${productPrice1}`, 0);
+// let productQuantity2 = +prompt(`Укажите количество продуктов '${product2}', цена ${productPrice2}`, 0);
+// let productQuantity3 = +prompt(`Укажите количество продуктов '${product3}', цена ${productPrice3}`, 0);
+
+// let totalPrice = 0;
+
+// totalPrice = totalPrice + productPrice1 * productQuantity1;
+// totalPrice = totalPrice + productPrice2 * productQuantity2;
+// totalPrice = totalPrice + productPrice3 * productQuantity3;
+
+// alert(`Общая сумма ${totalPrice}`);
+
+
+// // --------------Task-12
+//  Задание:
+//     Добавьте операторы сокращенной арифметики, где это возможно
+    
+// let product1 = "Бумага офисная А4, 80 г/м2, 500 л";
+// let product2 = "Биндеры для бумаги 51 мм";
+// let product3 = "Ручка шариковая синяя";
+
+// let productPrice1 = 280.25;
+// let productPrice2 = 56;
+// let productPrice3 = 12.50;
+
+// let productQuantity1 = +prompt(`Укажите количество продуктов '${product1}', цена ${productPrice1}`, 0);
+// let productQuantity2 = +prompt(`Укажите количество продуктов '${product2}', цена ${productPrice2}`, 0);
+// let productQuantity3 = +prompt(`Укажите количество продуктов '${product3}', цена ${productPrice3}`, 0);
+
+// let totalPrice = 0;
+
+// totalPrice += productPrice1 * productQuantity1;
+// totalPrice += productPrice2 * productQuantity2;
+// totalPrice += productPrice3 * productQuantity3;
+
+// alert(`Общая сумма ${totalPrice}`);
+
+
+// -------------Task-13
+        // // Задание
+        // // Поменяйте код согласно комментариям
+        // let a = 10;
+        // let b = 20;
+
+        // // укажите операторы так, чтобы на консоль вывелись сообщения, такие же, как и в 
+        // // комментариях на строках 18, 19, 20
+        // console.log(a < b);  // true
+        // console.log(a > b);  // false
+        // console.log(a < b); // true
+
+        
+// ------------------ Task-14
+//  Задание:
+//         Найдите и исправьте логические ошибки в сценарии.
+        // let product1 = "Бумага офисная А4, 80 г/м2, 500 л";
+        // let product2 = "Биндеры для бумаги 51 мм";
+        // let product3 = "Ручка шариковая синяя";
+
+        // let productPrice1 = 280.25;
+        // let productPrice2 = 56;
+        // let productPrice3 = 12.50;
+
+        // let productQuantity1 = prompt(`Укажите количество продуктов '${product1}', цена ${productPrice1}`, 0);
+        // let productQuantity2 = prompt(`Укажите количество продуктов '${product2}', цена ${productPrice2}`, 0);
+        // let productQuantity3 = prompt(`Укажите количество продуктов '${product3}', цена ${productPrice3}`, 0);
+
+        // // Выведите на экран сколько пользователю нужно заплатить за каждый продукт по отдельности и всего за все продукты
+        // // используйте форматированный вывод
+        // let totalPriceProduct1 = productPrice1 * productQuantity1;
+        // let totalPriceProduct2 = productPrice2 * productQuantity1;
+        // let totalPriceProduct3 = productPrice3 * productQuantity1;
+
+        // let total = totalPriceProduct1 + totalPriceProduct2 + totalPriceProduct3;
+        // console.log(`Общая сумма по продукту '${product1}' составляет ${totalPriceProduct1}`);
+        // console.log(`Общая сумма по продукту '${product2}' составляет ${totalPriceProduct2}`);
+        // console.log(`Общая сумма по продукту '${product3}' составляет ${totalPriceProduct3}`);
+        // console.log("Всего ", total);
+        
+        
